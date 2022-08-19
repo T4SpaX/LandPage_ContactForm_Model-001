@@ -16,6 +16,7 @@ export const SliderDiv = ({title,wtsappButton,height}) => {
               objectFit={'cover'}
               layout='fill'
               priority
+              alt="Imagem de ambiente por vidros"
               />
         </span>
         <C.Title>{title}</C.Title>  
@@ -39,7 +40,7 @@ export const SliderDiv = ({title,wtsappButton,height}) => {
                 }}>Entre em Contato</C.Anchor> 
             </Link>
             </div> : 
-              <C.Anchor href='https://wa.me/553186713679'
+              <C.Anchor href='https://wa.me/5531999570478'
                 style={{
                   background: '#084923',
                   width:'165px',}}>

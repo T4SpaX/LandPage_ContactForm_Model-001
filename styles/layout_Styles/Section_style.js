@@ -24,7 +24,7 @@ export const Content = styled.div`
 export const SubContent =styled.div`
   box-shadow: 4px 5px 0px gray;
   height: 300px;
-  width: 400px;
+  width: 800px;
   border-radius: 2px;
   justify-content: space-between;
   background:white;

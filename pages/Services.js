@@ -17,7 +17,7 @@ function Services() {
     </Head>
     <Nav_bar/>
     <C.Main white>
-      Services
+      Em breve !
     </C.Main>
     <FooterDiv/>
     </div>

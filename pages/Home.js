@@ -16,6 +16,8 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Elluxus | Vidraçaria Online para você</title>
+        <meta property="Description" content="Vidraçaria Elluxus ,Vidros e aluminio
+        MVA e mais, fazemos instalaçoes ou compre seu produto , o melhor em Vidros para Você" />
         <meta property="og:title" content="Vidraçaria Elluxus" />
         <meta property="og:url" content="elluxus.com/" />
         <meta property="og:locale" content="pt_br" />
@@ -23,25 +25,30 @@ export default function Home() {
       </Head>
       <Nav_bar/>
       <SliderDiv
-        title={'Encontre o melhor do seu Reflexo Aqui'}
+        title={'Encontre o melhor em Vidros Aqui e Faça seu Orçamento !!'}
       />
       <C.Main>
         <Section color='white'
-          title='O melhor MVA'
-          subTitle='é aqui mesmo o melhor MVA'
-          text='lorem ipsum dolor color art live them.'
+          title='Sua vidraçaria Online aqui'
+          subTitle='transparencia e simplicidade'
+          text='Faça um orçamento conosco via whatsapp ou email rapido atendimento e tire suas duvidas conosco!'
+          img={'/imgs/vidracaria-1.jpg'}
+          alt="imagem de ambiente e reflexos em vidros"
           reverb
           box
         />
-          <Section color='#084526' height={300}
-            title='faça seu orcamento com agente agora !! e sem compromisso'
-            subTitle={'Sabia que o MVA e melhor que o MDF?'}
-            text='lorem ipsum dolor colr art live htne'
-          />
+        <Section color='#084526' height={300}
+          title='faça seu orcamento com agente agora !! e sem compromisso'
+          subTitle={'Sabia que o MVA e melhor que o MDF?'}
+          text='lorem ipsum dolor colr art live htne'
+        />
         <Section color='white'
-          title='Sua vidraçaria aqui'
-          subTitle='transparencia e simplicidade'
-          text='lorem ipsum dolor cross rigid thor'
+          title='O melhor do MVA'
+          subTitle='Saiba porque o MVA e melhor que o MDF'
+          text='Instalacões em MVA vidro e aluminio onde o MVA substitui o MDF
+          duram muito mais tempo para você alem de preservar o meio ambiente!'
+          img={'/imgs/mva.jpg'}
+          alt="imagem de um MVA - Moveis em vidro e aluminio"
           reverb
           box
         />

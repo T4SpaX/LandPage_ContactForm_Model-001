@@ -4,7 +4,7 @@ import Image from 'next/image.js';
 import * as C from '../styles/layout_Styles/Section_style';
 
 export const Section = (
-  {color,height,text,title,subTitle,reverb,box}
+  {color,height,text,title,subTitle,reverb,box,img,alt}
   ) => {
   return (
     <C.Container style={{
@@ -26,12 +26,13 @@ export const Section = (
         {color=='#084526' ? '' :
         <C.SubContent>
           <Image
-            src='/imgs/mva.jpg'
+            src={img}
             objectFit={'cover'}
             layout='fill'
             style={{position:'relative',
               borderRadius:'2px'
             }}
+            alt={alt}
           />
         </C.SubContent>}
       </C.Content>

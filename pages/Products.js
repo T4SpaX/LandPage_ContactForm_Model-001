@@ -16,7 +16,7 @@ const Products = () => {
     </Head>
     <Nav_bar/>
     <C.Main white>
-      Products
+      Em Breve !
     </C.Main>  
     <FooterDiv/>
     </>

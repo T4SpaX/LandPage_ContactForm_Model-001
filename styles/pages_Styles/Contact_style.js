@@ -22,7 +22,7 @@ export const TitlePage = styled.h1`
   text-align: center;
   padding:0px 3rem ;
   font-family: sans-serif;
-  color: #000312;
+  color: #4d4d4d;
 `
 
 export const Footer = styled.footer`
