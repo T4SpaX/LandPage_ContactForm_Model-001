@@ -22,7 +22,7 @@ export const SliderDiv = ({title,wtsappButton,height}) => {
         <C.Title>{title}</C.Title>  
           {!wtsappButton ? 
             <div>
-            <Link href='/Products'>
+            <Link href='/produtos'>
             <C.Anchor
               style={{
                 background:'transparent',
@@ -31,7 +31,7 @@ export const SliderDiv = ({title,wtsappButton,height}) => {
                 border:'1px solid #084923',
               }}>Produtos</C.Anchor>
               </Link>         
-            <Link href='/Contact'>
+            <Link href='/contato'>
               <C.Anchor
                 style={{
                   background:'#084923',

@@ -52,17 +52,17 @@ const Nav_bar = () => {
                 </C.NavItem>
               </C.Item>
               <C.NavItem active={navbar? true : undefined}>
-                <C.Item href={'/Products'}>
+                <C.Item href={'/produtos'}>
                  <C.textItem  active={navbar? true : undefined}>Produtos</C.textItem> 
                 </C.Item>
               </C.NavItem>
               <C.NavItem active={navbar? true : undefined}>
-                <C.Item href={'/Services'}>
+                <C.Item href={'/servicos'}>
                  <C.textItem  active={navbar? true : undefined}>Serviços</C.textItem> 
                 </C.Item>
               </C.NavItem>
               <C.NavItem active={navbar? true : undefined}>
-                <C.Item href={'/Contact'}>
+                <C.Item href={'/contato'}>
                   <C.textItem  active={navbar? true : undefined}>Contatos</C.textItem>
                 </C.Item>
               </C.NavItem>

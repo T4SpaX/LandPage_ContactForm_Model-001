@@ -10,7 +10,7 @@ export const NavContainer = styled.div`
   z-index: 999;
   transition: ease all .4s;
   background:${(props)=> props.active ? 'white' : 'linear-Gradient(black 0%,transparent 100%)'};
-  box-shadow: ${(props)=>props.active? '0px 1px 5px grey':'none'};
+  box-shadow: ${(props)=>props.active? '0px 1px 5px gray':'none'};
   `;
 export const NavContent = styled.div`
   flex-direction: ${(props)=>props.active ? 'row':'column'};
