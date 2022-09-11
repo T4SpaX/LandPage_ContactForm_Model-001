@@ -18,7 +18,7 @@ export const Container = styled.footer`
 `
 
 export const Content = styled.div`
-  width: 280px;
+  width: 300px;
   align-items: center;
   justify-content:center;
   font-family:sans-serif;

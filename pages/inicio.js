@@ -12,6 +12,7 @@ import Buttons from '../components/Buttons/Button';
 import styles from '../styles/Home.module.css';
 
 import * as C from '../styles/pages_Styles/Home_styles';
+//import Card from '../components/Cards';
 
 const Nav_bar = dynamic(()=>import("../layout/Nav_bar.js"),{ssr:false})
 
@@ -46,7 +47,8 @@ export default function Home() {
           reverb
           box
         />
-            <Section color='white'
+
+        <Section color='white'
           title='Sua vidraçaria Online aqui'
           subTitle='transparencia e simplicidade'
           text='Faça um orçamento conosco via whatsapp ou email e tire suas duvidas conosco!'

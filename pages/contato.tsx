@@ -3,6 +3,7 @@ import Head from 'next/head'
 import dynamic from 'next/dynamic';
 import {Sliderdiv} from '../layout/sliderdiv';
 import {FormContact}  from '../components/FormContact';
+import FrameMaps from '../components/googlemapsframe'
 import * as C from '../styles/pages_Styles/Contact_style';
 import  FooterDiv  from '../layout/Footer.js';
 
@@ -26,6 +27,8 @@ const Contact = ()=>{
       <C.Main white>
         <C.TitlePage>Mande uma mensagem e faça um orçamento!</C.TitlePage>
         <FormContact />
+        
+        <FrameMaps/>
       </C.Main>
       <FooterDiv/>
     </C.Container>

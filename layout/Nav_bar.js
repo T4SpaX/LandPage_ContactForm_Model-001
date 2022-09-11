@@ -51,18 +51,18 @@ const Nav_bar = React.forwardRef(() => {
                    <C.textItem  active={navbar? true : undefined}>Inicio</C.textItem> 
                 </C.NavItem>
               </C.Item>
-              <C.NavItem active={navbar? true : undefined}>
+              {/*<C.NavItem active={navbar? true : undefined}>
                 <C.Item href={'/produtos'} passRef>
                   <C.textItem  active={navbar? true : undefined}>Produtos</C.textItem> 
            
                 </C.Item>
-              </C.NavItem>
+                </C.NavItem>
               <C.NavItem active={navbar? true : undefined}>
                 <C.Item href={'/servicos'} passRef>
                   <C.textItem  active={navbar? true : undefined}>Serviços</C.textItem> 
               
                 </C.Item>
-              </C.NavItem>
+              </C.NavItem>*/}
               <C.NavItem active={navbar? true : undefined}>
                 <C.Item href={'/contato'} to='/contato' passRef>
                   <C.textItem  active={navbar? true : undefined}>Contatos</C.textItem>
