@@ -1,7 +1,7 @@
 import React,{FormEvent, useState} from 'react';
 import * as C from '../styles/layout_Styles/SectionContact_style.js';
 //import InputForm from './InputForm.js';
-export const FormContact = (color:String,height:String,reverb:String,box:String) => {
+export const FormContact = () => {
     const initialState = {
       name:'',
       email:'',
@@ -35,15 +35,8 @@ export const FormContact = (color:String,height:String,reverb:String,box:String)
     })
 
   return (
-    <C.Container style={{
-      background:color,
-      minHeight:height,
-      boxShadow:color=='#084526'? '0px 4px 10px #1d1d1d':'none',
-      zIndex:color=='#084526'? '2':'0',
-      }} box={box} >
-      <C.Content style={{
-        height: color=='#084526' ? '200px':'600px'
-      }} reverb={reverb}>
+    <C.Container>
+      <C.Content>
 
         {/*inicio formulario*/}
         <C.Form onSubmit={SendContact}>

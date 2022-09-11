@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import * as C from '../styles/layout_Styles/sliderdiv_Style';
 
-export const SliderDiv = ({title,wtsappButton,height}) => {
+export const Sliderdiv = ({title,wtsappButton,height}) => {
   return (
     <C.SliderContainer
       style={{height:height}}
@@ -41,7 +41,7 @@ export const SliderDiv = ({title,wtsappButton,height}) => {
                 }}>Entre em Contato</C.Anchor> 
             </Link>
             </div> : 
-              <C.Anchor href='https://wa.me/5531999570478'
+              <C.Anchor href='https://wa.me/5531999570478' target='_blank'
                 style={{
                   background: '#084923',
                   width:'165px',}}>

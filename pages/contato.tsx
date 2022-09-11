@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head'
 import dynamic from 'next/dynamic';
-import {SliderDiv} from '../layout/SliderDiv';
+import {Sliderdiv} from '../layout/sliderdiv';
 import {FormContact}  from '../components/FormContact';
 import * as C from '../styles/pages_Styles/Contact_style';
 import  FooterDiv  from '../layout/Footer.js';
@@ -17,7 +17,8 @@ const Contact = ()=>{
         <link rel="icon" href="/favicon-16x16.png" />
       </Head>
       <Nav_bar/>
-      <SliderDiv
+      
+      <Sliderdiv
           title={'Entre em Contato Conosco Pelo WhatsApp!'}
           height={359}
           wtsappButton

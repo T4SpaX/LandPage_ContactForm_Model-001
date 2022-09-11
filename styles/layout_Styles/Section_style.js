@@ -16,9 +16,10 @@ export const Content = styled.div`
   align-items: center;
   text-align: left;
   flex-direction: ${(props)=>props.reverb ? 'row-reverse' : 'row'};
-  gap:1rem;
+  gap:2rem;
   @media(max-width:800px){
     flex-direction: column;
+    height: auto !important;
   }
 `
 export const SubContent =styled.div`

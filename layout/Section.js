@@ -29,7 +29,7 @@ export const Section = (
             src={img}
             objectFit={'cover'}
             layout='fill'
-            style={{position:'relative',
+            style={{position:'relative !important',
               borderRadius:'2px'
             }}
             alt={alt}

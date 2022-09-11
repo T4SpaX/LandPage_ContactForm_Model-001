@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import * as C from '../Styles/layout_Styles/Footer_Style.js';
+import * as C from '../styles/layout_Styles/Footer_Style';
 
 const FooterDiv = ()=>{
   return (

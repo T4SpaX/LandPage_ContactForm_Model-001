@@ -10,7 +10,7 @@ const Nav_bar = React.forwardRef(() => {
   const [navbar,setNavbar] = useState(false);
   
   const changeBackground = ()=>{
-    if(window.scrollY >= 300) {
+    if(window.scrollY >= 80) {
       setNavbar(true)
     }else(
       setNavbar(false)

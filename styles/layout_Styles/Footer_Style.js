@@ -42,6 +42,7 @@ export const Anchor = styled.a`
   margin-bottom: 4px;
   justify-content: space-around;
   cursor: pointer;
+  text-decoration: underline; 
   &:hover{
     color: #D7B34C;
   }
