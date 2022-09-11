@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import {Close,Open} from '../../styles/layout_Styles/NavBar_Style';
 //import {BiMenu} from 'react-icons/bi';
@@ -24,8 +24,6 @@ export const ButtonMenu = styled.div`
 `
 
 export default function ButtonNavbar({active,handleToggle,openNav}) {
-   
-
   return (
     <>
       <Menu>

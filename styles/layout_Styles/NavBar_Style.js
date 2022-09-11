@@ -13,7 +13,7 @@ export const NavContainer = styled.div`
   box-shadow: ${(props)=>props.active? '0px 1px 5px gray':'none'};
   `;
 export const NavContent = styled.div`
-  flex-direction: ${(props)=>props.active ? 'row':'column'};
+  flex-direction: ${(props)=>props.active ? 'row':'row'};
   display: flex;
   padding: 1rem;
   margin: 0px auto;

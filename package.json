@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@glidejs/glide": "^3.5.2",
     "@styled-icons/ionicons-solid": "^10.34.0",
     "googleapis": "^105.0.0",
     "ionicons": "^6.0.2",

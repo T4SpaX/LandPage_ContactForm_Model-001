@@ -5,7 +5,7 @@ import ButtonNavbar from '../components/Buttons/ButtonNavbar';
 
 import * as C from '../styles/layout_Styles/NavBar_Style';
 
-const Nav_bar = () => {
+const Nav_bar = React.forwardRef(() => {
   const [openNav,setOpenNav] = useState(false)
   const [navbar,setNavbar] = useState(false);
   
@@ -29,13 +29,13 @@ const Nav_bar = () => {
     <>
       <C.NavContainer active={navbar? true : undefined}>
         <C.NavContent active={navbar? true : undefined}>
-          <C.Logo href='/' active={navbar? true : undefined}>
+          <C.Logo href='/' active={navbar} passRef>
             <Image 
               src={LogoSvg}
               width={200}
               height={80}
               style={{cursor:'pointer'}}
-            />
+              />   
           </C.Logo> 
 
           <ButtonNavbar active={navbar? true : undefined}
@@ -46,23 +46,25 @@ const Nav_bar = () => {
             <C.NavRow menu={openNav? true : undefined}
               active={navbar? true : undefined}
             >
-              <C.Item href='/' activeClassName='active'>
+              <C.Item href='/' activeClassName='active' passRef>
                 <C.NavItem active={navbar? true : undefined}>
-                  <C.textItem  active={navbar? true : undefined}>Inicio</C.textItem> 
+                   <C.textItem  active={navbar? true : undefined}>Inicio</C.textItem> 
                 </C.NavItem>
               </C.Item>
               <C.NavItem active={navbar? true : undefined}>
-                <C.Item href={'/produtos'}>
-                 <C.textItem  active={navbar? true : undefined}>Produtos</C.textItem> 
+                <C.Item href={'/produtos'} passRef>
+                  <C.textItem  active={navbar? true : undefined}>Produtos</C.textItem> 
+           
                 </C.Item>
               </C.NavItem>
               <C.NavItem active={navbar? true : undefined}>
-                <C.Item href={'/servicos'}>
-                 <C.textItem  active={navbar? true : undefined}>Serviços</C.textItem> 
+                <C.Item href={'/servicos'} passRef>
+                  <C.textItem  active={navbar? true : undefined}>Serviços</C.textItem> 
+              
                 </C.Item>
               </C.NavItem>
               <C.NavItem active={navbar? true : undefined}>
-                <C.Item href={'/contato'}>
+                <C.Item href={'/contato'} to='/contato' passRef>
                   <C.textItem  active={navbar? true : undefined}>Contatos</C.textItem>
                 </C.Item>
               </C.NavItem>
@@ -73,5 +75,5 @@ const Nav_bar = () => {
       </C.NavContainer>
     </>
   )
-}
+})
 export default Nav_bar;

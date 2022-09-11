@@ -1,3 +1,4 @@
+import React from 'react'
 import Link from 'next/link';
 import Image from 'next/image';
 import * as C from '../styles/layout_Styles/sliderdiv_Style';
@@ -16,7 +17,7 @@ export const SliderDiv = ({title,wtsappButton,height}) => {
               objectFit={'cover'}
               layout='fill'
               priority
-              alt="Imagem de ambiente por vidros"
+              alt="Imagem de ambiente por vidros"        
               />
         </span>
         <C.Title>{title}</C.Title>  

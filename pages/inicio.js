@@ -29,11 +29,12 @@ export default function Home() {
       />
       <C.Main>
         <Section color='white'
-          title='Sua vidraçaria Online aqui'
-          subTitle='transparencia e simplicidade'
-          text='Faça um orçamento conosco via whatsapp ou email rapido atendimento e tire suas duvidas conosco!'
-          img={'/imgs/vidracaria-1.jpg'}
-          alt="imagem de ambiente e reflexos em vidros"
+          title='O melhor do MVA'
+          subTitle='Saiba porque o MVA é melhor que o MDF'
+          text='Instalacões em MVA vidro e aluminio onde o MVA substitui o MDF
+          duram muito mais tempo para você alem de preservar o meio ambiente!'
+          img={'/imgs/mva.jpg'}
+          alt="imagem de um MVA - Moveis em vidro e aluminio"
           reverb
           box
         />
@@ -43,12 +44,11 @@ export default function Home() {
           text='lorem ipsum dolor colr art live htne'
         />
         <Section color='white'
-          title='O melhor do MVA'
-          subTitle='Saiba porque o MVA e melhor que o MDF'
-          text='Instalacões em MVA vidro e aluminio onde o MVA substitui o MDF
-          duram muito mais tempo para você alem de preservar o meio ambiente!'
-          img={'/imgs/mva.jpg'}
-          alt="imagem de um MVA - Moveis em vidro e aluminio"
+          title='Sua vidraçaria Online aqui'
+          subTitle='transparencia e simplicidade'
+          text='Faça um orçamento conosco via whatsapp ou email rapido atendimento e tire suas duvidas conosco!'
+          img={'/imgs/vidracaria-1.jpg'}
+          alt="imagem de ambiente e reflexos em vidros"
           reverb
           box
         />
