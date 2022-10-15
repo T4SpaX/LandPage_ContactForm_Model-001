@@ -1,11 +1,11 @@
 import React from 'react';
 import Head from 'next/head'
-import * as C from '../styles/pages_Styles/Products_style'
+import * as C from '../../styles/pages_Styles/Products_style'
 import dynamic from 'next/dynamic';
-import  FooterDiv  from '../layout/Footer.js';
-import WppButton from '../components/Buttons/WppButton';
+import  FooterDiv  from '../../layout/Footer.js';
+import WppButton from '../../components/Buttons/WppButton';
 
-const Nav_bar = dynamic(()=>import("../layout/Nav_bar.js"),{ssr:false});
+const Nav_bar = dynamic(()=>import("../../layout/Nav_bar.js"),{ssr:false});
 
 const Products = () => {
   return (

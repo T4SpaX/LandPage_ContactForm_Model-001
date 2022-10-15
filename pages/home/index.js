@@ -2,24 +2,20 @@ import Head from 'next/head';
 import Image from 'next/dist/client/image';
 import dynamic from 'next/dynamic';
 
-import { Sliderdiv } from '../layout/sliderdiv';
-import { Section } from '../layout/Section.js';
-import FooterDiv from '../layout/Footer.js';
+import { Sliderdiv } from '../../components/layout/slider';
+import { Section } from '../../components/layout/section';
+import FooterDiv from '../../components/layout/footer';
 
-import WppButton from '../components/Buttons/WppButton';
-import Buttons from '../components/Buttons/Button';
-
-import styles from '../styles/Home.module.css';
-
-import * as C from '../styles/pages_Styles/Home_styles';
+import WppButton from '../../components/Buttons/WppButton';
+import Buttons from '../../components/Buttons/Button';
 //import Card from '../components/Cards';
 
-const Nav_bar = dynamic(()=>import("../layout/Nav_bar.js"),{ssr:false})
+const Nav_bar = dynamic(()=>import("../../components/layout/navbar/index"),{ssr:false})
 
 export default function Home() {
   return (
     
-    <div className={styles.container}>
+    <div>
 
       <Head>
         <title>Elluxus | Vidraçaria Online para você</title>
@@ -34,7 +30,7 @@ export default function Home() {
       <Sliderdiv
         title={'Encontre o melhor em Vidros Aqui e Faça seu Orçamento !!'}
       />
-      <C.Main>
+      <main>
         <WppButton/>
         <Section color='white'
           title='O melhor do MVA'
@@ -42,7 +38,7 @@ export default function Home() {
           text='Instalacões em MVA vidro e aluminio substituiem 
             a madeira usada no MDF que estraga e se deteriora com o tempo, 
             O MVA durará muito mais tempo alem de preservar o meio Ambiente👍'
-          img={'/imgs/mva.jpg'}
+          img={'/imgs/mva.png'}
           alt="imagem de um MVA - Moveis em vidro e aluminio"
           reverb
           box
@@ -62,7 +58,7 @@ export default function Home() {
           text='Entregamos e Instalamos para você faça seu pedido ou orçamento e lhe responderemos por whatsapp o seu orçamento 👍'
         />
         <Buttons/>
-      </C.Main>
+      </main>
       <FooterDiv/>
     </div>
   )

@@ -1,5 +1,5 @@
 import React from 'react';
-import Home from './inicio';
+import Home from './home';
 
 export default function index() {
   return (

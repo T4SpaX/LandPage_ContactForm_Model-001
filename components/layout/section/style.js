@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import css from 'styled-jsx/css'
 
-export const Container = styled.div`
+export default css.global`
   width: ${(props)=>props.box ? '85%':'100%'};
   min-height: 500px;
   padding: 20px 24px ;

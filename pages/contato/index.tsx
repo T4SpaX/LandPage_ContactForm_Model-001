@@ -1,13 +1,14 @@
 import React from 'react';
 import Head from 'next/head'
 import dynamic from 'next/dynamic';
-import {Sliderdiv} from '../layout/sliderdiv';
-import {FormContact}  from '../components/FormContact';
-import FrameMaps from '../components/googlemapsframe'
-import * as C from '../styles/pages_Styles/Contact_style';
-import  FooterDiv  from '../layout/Footer.js';
+import {Sliderdiv} from '../../components/layout/slider';
+import {FormContact}  from '../../components/form/FormContact';
+import FrameMaps from '../../components/googlemapsframe'
+import * as C from './_style';
+import  FooterDiv  from '../../components/layout/footer/index';
 
-const Nav_bar = dynamic(()=>import("../layout/Nav_bar.js"),{ssr:false});
+const Nav_bar = dynamic(()=>import("../../components/layout/navbar/index"),{ssr:false});
+
 
 const Contact = ()=>{
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {Close,Open} from '../../styles/layout_Styles/NavBar_Style';
+import {Close,Open} from '../layout/navbar/style';
 //import {BiMenu} from 'react-icons/bi';
 //import {BiX} from 'react-icons/bi';
 

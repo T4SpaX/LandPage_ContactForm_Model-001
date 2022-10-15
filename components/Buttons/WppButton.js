@@ -1,24 +1,23 @@
 import React from 'react'
 import {AiOutlineWhatsApp} from 'react-icons/ai';
-import styled from 'styled-components';
 
 function WppButton() {
   return (
     <>
       <a href='https://wa.me/5531999570478' target='_blank'>
-        <Container>
+        <div>
           <AiOutlineWhatsApp style={{
             color:'white',
             width:'30px',
             height:'30px'
           }}/>
-        </Container>
+        </div>
       </a>
     </>
   )
 }
 
-const Container = styled.div`
+/*const Container = styled.div`
   position: fixed;
   width: 60px;
   height: 60px;
@@ -34,9 +33,9 @@ const Container = styled.div`
   box-shadow: 3px 3px 3px gray;
   &:hover{
     background: #075E54;
-  }
-` 
-/*const Content = styled.div`
+  }` 
+
+const Content = styled.div`
   position: relative;
   bottom: 40px;
   right: 10px;

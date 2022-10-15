@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import * as C from '../styles/components_Styles/Input_styles.js'
+import * as C from '../../styles/components_Styles/Input_styles.js'
 
 const InputForm = () => {
   const [name, setName] = useState('')

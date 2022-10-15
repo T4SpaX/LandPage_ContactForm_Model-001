@@ -1,5 +1,5 @@
 import React,{FormEvent, useState} from 'react';
-import * as C from '../styles/layout_Styles/SectionContact_style.js';
+import * as C from './style.js/index.js.js';
 //import InputForm from './InputForm.js';
 export const FormContact = () => {
     const initialState = {
