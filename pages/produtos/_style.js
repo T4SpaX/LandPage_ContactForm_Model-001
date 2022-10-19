@@ -1,6 +1,6 @@
-import styled from 'styled-components';
 
-export const Main = styled.main`
+
+export const Main = `
   min-height: 100vh;
   padding: 4rem 0;
   

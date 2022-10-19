@@ -2,43 +2,44 @@ import React from 'react';
 import Image from 'next/image.js';
 
 export const Section = (
-  {color,height,text,title,subTitle,reverb,box,img,alt}
+  {color,text,title,subTitle,reverb,box,img,alt}
   ) => {
   return (
-    <div className={
-    `${box ?'w-[85%]':'w-[100%]'} 
-      min-h-[500px] px-[20px] py-[24] pb-[color=='#084526' ? '20px' : '90px']
-      mx-[auto] my-0 font-sans-serif bg-[${color}]
-      shadow-sm shadow-[${color=='#084526'? '0px 4px 10px #1d1d1d':'none'}]
-      z-[${color=='#084526'? '2':'0'}]`
-      }>
+    <div className={`
+      ${box ? 'w-[85%]':'w-[100%]'} 
+      px-4 py-6 mx-auto my-0 shadow-sm
+    `}>
 
       <div className={`
-          flex
-          w-[${color=='#084526' ? '300px':'400px'}]
-          decoration-[${color=='#084526' ? 'white':'#4d4b4b'}]   
-          flex-[${reverb?'row-reverse':'row'}]
-          border-t border-b border-[#D7B34C]
-          justify-around self-center text-left gap-8
-          md:flex-column !h-auto
+        flex ${
+          color=='#084526' ? 
+          'bg-[#084526] text-white p-6 ' : 
+          'text-gray-800 border-t border-b border-[#D7B34C] p-8'
+        }   
+        ${reverb?'flex-row-reverse':'flex-row'} 
+        font-semibold justify-around self-center md:flex-column
+        font-sans-serif text-lg gap-8
         `}>
           <div>
-            <h1>{title}</h1>
-            <h2>{subTitle}</h2>
-            <div>{text}</div>
+            <h1 className='text-4xl p-2'>{title}</h1>
+            <h2 className='text-x font-regular p-4 pb-0'>{subTitle}</h2>
+            <div className='text-x font-regular p-4 pt-0'>{text}</div>
           </div>
         {color=='#084526' ? '' :
-        <div className='shadow h-80 w-[820]
+        <div className='
+          shadow h-80 
           rounded-sm justify-between bg-white
           bg-center bg-cover relative md:w-80
         '>
-          <Image
-            src={img}
-            objectFit={'cover'}
-            layout='fill'
-            className='!relative rounded-sm'
-            alt={alt}
-          />
+          <div>
+            <Image
+              src={img}
+              objectFit={'cover'}
+              layout='fill'
+              className='!relative rounded'
+              alt={alt}
+              />
+          </div>
         </div>}
       </div>
     </div>

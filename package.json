@@ -12,6 +12,7 @@
     "@glidejs/glide": "^3.5.2",
     "@styled-icons/ionicons-solid": "^10.34.0",
     "embla-carousel-react": "^7.0.2",
+    "formik": "^2.2.9",
     "googleapis": "^105.0.0",
     "ionicons": "^6.0.2",
     "next": "12.2.2",
@@ -19,7 +20,8 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
-    "styled-jsx": "^5.0.7"
+    "styled-jsx": "^5.0.7",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@types/node": "^18.7.13",

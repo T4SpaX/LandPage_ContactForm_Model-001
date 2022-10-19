@@ -1,13 +1,12 @@
 import React from 'react';
 import Head from 'next/head'
-import * as C from '../../styles/pages_Styles/Products_style'
 import dynamic from 'next/dynamic';
-import  FooterDiv  from '../../layout/Footer.js';
+import FooterDiv from '../../components/layout/footer/index';
 import WppButton from '../../components/Buttons/WppButton';
 
-const Nav_bar = dynamic(()=>import("../../layout/Nav_bar.js"),{ssr:false});
+const Nav_bar = dynamic(()=>import("../../components/layout/navbar/index"),{ssr:false});
 
-const Products = () => {
+export default function Products(){
   return (
     <>
     <Head>
@@ -17,11 +16,10 @@ const Products = () => {
     </Head>
     <Nav_bar/>
     <WppButton/>
-    <C.Main white>
+    <main className='m-28 flex justify-center text-4xl font-sans text-gray-700'>
       Em Breve !
-    </C.Main>  
+    </main>  
     <FooterDiv/>
     </>
   )
 }
-export default Products;

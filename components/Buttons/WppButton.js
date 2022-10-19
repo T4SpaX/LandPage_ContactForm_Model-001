@@ -4,13 +4,11 @@ import {AiOutlineWhatsApp} from 'react-icons/ai';
 function WppButton() {
   return (
     <>
-      <a href='https://wa.me/5531999570478' target='_blank'>
-        <div>
-          <AiOutlineWhatsApp style={{
-            color:'white',
-            width:'30px',
-            height:'30px'
-          }}/>
+      <a className='fixed w-12 h-12 bottom-6 right-6 rounded-full bg-[#25D366]
+        z-[100] flex cursor pointer hover:bg-[#075E54]' 
+        href='https://wa.me/5531999570478' target='_blank'>
+        <div className='relative left-2 top-2'>
+          <AiOutlineWhatsApp className='text-white w-8 h-8'/>
         </div>
       </a>
     </>

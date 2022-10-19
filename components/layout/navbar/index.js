@@ -2,14 +2,14 @@ import React,{useState, useEffect} from 'react';
 import Image from 'next/image.js';
 import Link from 'next/link.js'
 import LogoSvg from '../../../public/imgs/logoElluxos.svg';
-//import ButtonNavbar from '../../Buttons/ButtonNavbar';
+import ButtonNavbar from '../../Buttons/ButtonNavbar';
 
 const Nav_bar = React.forwardRef(() => {
   const [openNav,setOpenNav] = useState(false)
   const [navbar,setNavbar] = useState(false);
   
   const changeBackground = ()=>{
-    if(window.scrollY >= 80) {
+    if(window.scrollY >= 420) {
       setNavbar(true)
     }else(
       setNavbar(false)
@@ -27,14 +27,17 @@ const Nav_bar = React.forwardRef(() => {
   return (
     <>
       <div className={`
-        flex w-[100%] fixed z-50 transition-all ease duration-[.4s]
-        bg-[${navbar? 'white':'bg-gradient-to-b from-black'}]
+        flex w-[100%] z-50 transition-all ease-in duration-[0.4s]
+        ${navbar? 'fixed bg-white border-b border-[#D7B34C]'
+          :'h-20 border-t-2 border-[#D7B34C]'}
       `}>
         <div className={`
-          flex flex-row p-4 mx-auto my-0 justify-between
-          itens-center md:flex-row
+          flex itens-center w-[100%] md:w-[70%] 
+          mx-auto my-0 justify-between
+          ${navbar? 'content-center':'p-0'}
         `}>
-          <Link href='/' active={navbar} passRef>
+          <div className='mr-24'>
+          <Link href='/' passRef>
             <Image 
               src={LogoSvg}
               width={200}
@@ -42,25 +45,31 @@ const Nav_bar = React.forwardRef(() => {
               className='cursor-pointer'
               />   
           </Link> 
+          </div>
 
-          {/*<ButtonNavbar active={navbar? true : undefined}
-          handleToggle={handleToggle} openNav={openNav}
-          />*/}
-
-          <nav>
+          <ButtonNavbar 
+            handleToggle={handleToggle} 
+            openNav={openNav}
+          />
+          <nav className={`${openNav && true ? 'block':'hidden'} md:block`}>
             <ul className={`
-              flex decoration-none gap-8
+              none absolute h-[calc(100vh - 70px)] top-[68px] right-0
+              p-0 w-[100%] z-[1000] bg-white md:bg-transparent md:relative md:top-0
+              md:flex decoration-none gap-8 
             `}
-            
-            menu={openNav? true : undefined}
+              menu={openNav? true : undefined}
               active={navbar? true : undefined}
             >
               <li className={`
-                flex w-20 justify-center p-6
-                `} active={navbar? true : undefined}>
+                flex justify-center w-[100%]
+                p-4 md:p-0 border-b md:border-none border-[#D7B34C] m-0 md:m-4 
+                `}>
                 <Link href='/' activeClassName='active' passRef>
-                  <a className={`font-sans-serif 
-                    bg-gradient-to-r from-[#D7B34C]
+                  <a className={`
+                  font-sans-serif px-6 py-2 shadow-inset text-base font-semibold
+                  rounded border-b-2 border-[#D7B34C] text-[#D7B34C] hover:shadow-md
+                  hover:bg-[#D7B34C] hover:text-white transition ease-in duration0[0.4s]
+                  w-[100%] text-center   
                   `}active={navbar? true : undefined}>Inicio</a> 
                 </Link>
               </li>
@@ -76,15 +85,22 @@ const Nav_bar = React.forwardRef(() => {
               
                 </C.Item>
               </C.NavItem>*/}
-              <li className={`flex w-20 justify-center`}
+              <li className={`
+                flex justify-center w-[100%]
+                p-4 md:p-0 border-b md:border-none border-[#D7B34C] m-0 md:m-4 
+              `}
               active={navbar? true : undefined}>
                 <Link href={'/contato'} to='/contato' passRef>
-                  <a className={`p-6 font-sans-serif`} active={navbar? true : undefined}>Contatos</a>
+                  <a className={`p-6 font-sans-serif  font-sans-serif 
+                  px-6 py-2 shadow-inset text-base font-semibold
+                  rounded border-b-2 border-[#D7B34C] text-[#D7B34C] hover:shadow-md
+                  hover:bg-[#D7B34C] hover:text-white transition ease-in duration0[0.4s]
+                  w-[100%] text-center  
+                  `} active={navbar? true : undefined}>Contatos</a>
                 </Link>
               </li>
             </ul>
           </nav>
-             
         </div> 
       </div>
     </>
