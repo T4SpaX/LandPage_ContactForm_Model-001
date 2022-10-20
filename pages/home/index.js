@@ -29,15 +29,17 @@ export default function Home() {
       <Nav_bar/>
       <Sliderdiv
         title='Encontre o melhor em Vidros Aqui e Faça seu Orçamento !!'
-        subTitle='Instalações de Vidros ,aluminios , MVA e mais.. faça ja um orçamento conosco !'
+        subTitle='Instalações de Vidros ,aluminios , MVA e mais.. faça ja seu orçamento conosco !'
       />
       <main>
         <WppButton/>
 
         <Section color='white'
           title='Sua vidraçaria Online aqui'
-          subTitle='transparencia e simplicidade'
-          text='Faça um orçamento conosco via whatsapp ou email e tire suas duvidas conosco!'
+          subTitle='transparencia e simplicidade, faça um orçamento conosco via 
+          whatsapp ou email e tire suas duvidas conosco!'
+          text='Instalamos armações em vidros e aluminio como portas,janelas,
+          corrimões e entre outros, intalações de moveis planejados em MVA vidro e aluminio.'
           img={'/imgs/vidracaria-1.jpg'}
           alt="imagem de ambiente e reflexos em vidros"
           box
@@ -61,11 +63,8 @@ export default function Home() {
           reverb
           box
       />*/}
-
-     
         <Features/>
-        <Buttons/>
-        
+        <Buttons/> 
       </main>
       <FooterDiv/>
     </div>

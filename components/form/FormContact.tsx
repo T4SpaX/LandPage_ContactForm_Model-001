@@ -66,11 +66,19 @@ export const FormContact = () => {
     async function onSubmit(){
       const valid = await schemaValidation.validate(values)
       if(valid){
-        alert(JSON.stringify(values,null,4))
+        const response = await fetch('api/submit',{
+          method: 'POST',
+          headers:{
+            'Accept':'application/json',
+            'Content-Type':'application/json'
+          },
+          body:JSON.stringify(values)
+        });
+        const content = await response.json()
+        alert(<div>Sua mensagem foi enviada com sucesso</div>)
       }
-      console.log("submited")
     }
-
+    
     const {
       values,
       handleBlur,

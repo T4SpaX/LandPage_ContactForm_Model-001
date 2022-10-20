@@ -14,7 +14,5 @@ module.exports = {
     }
   },
   plugins: [],
-  darkMode: false,
-  media:true,
-  
+  darkMode: false,  
 }
