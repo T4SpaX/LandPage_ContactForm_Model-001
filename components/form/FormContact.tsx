@@ -66,16 +66,17 @@ export const FormContact = () => {
     async function onSubmit(){
       const valid = await schemaValidation.validate(values)
       if(valid){
+        alert('Sua mensagem foi enviada com sucesso')
         const response = await fetch('api/submit',{
           method: 'POST',
           headers:{
             'Accept':'application/json',
             'Content-Type':'application/json'
           },
-          body:JSON.stringify(values)
+          body:JSON.stringify(values,null,5)
         });
         const content = await response.json()
-        alert(<div>Sua mensagem foi enviada com sucesso</div>)
+        resetForm()
       }
     }
     
@@ -85,7 +86,8 @@ export const FormContact = () => {
       handleChange,
       handleSubmit,
       errors,
-      touched
+      touched,
+      resetForm
     } = useFormik({
       initialValues: {
         name:'',
