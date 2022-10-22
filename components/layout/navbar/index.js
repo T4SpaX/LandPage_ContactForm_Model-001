@@ -64,7 +64,7 @@ const Nav_bar = React.forwardRef(() => {
                 flex justify-center w-[100%]
                 p-4 md:p-0 border-b md:border-none border-[#D7B34C] m-0 md:m-4 
                 `}>
-                <Link href='/' activeClassName='active' passRef>
+                <Link href='/' activeclassName='active' passRef>
                   <a className={`
                   font-sans-serif px-6 py-2 shadow-inset text-base font-semibold
                   rounded border-b-2 border-[#D7B34C] text-[#D7B34C] hover:shadow-md
